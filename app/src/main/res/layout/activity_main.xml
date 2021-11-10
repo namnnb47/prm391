@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#420602"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="412dp"
+        android:layout_height="542dp"
+        android:background="@drawable/bglogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".78"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="267dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_bg"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.807"
+            app:layout_constraintWidth_percent=".8" />
+
+        <EditText
+            android:id="@+id/txtPhoneNumber"
+            android:layout_width="279dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_bg"
+            android:backgroundTint="@color/white"
+            android:hint="Phone number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.337"
+            app:layout_constraintWidth_percent=".8" />
+
+        <EditText
+            android:id="@+id/txtPssword"
+            android:layout_width="283dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_text_bg"
+            android:backgroundTint="@color/white"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPhoneNumber"
+            app:layout_constraintVertical_bias="0.004"
+            app:layout_constraintWidth_percent=".8" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="271dp"
+            android:layout_height="42dp"
+            android:background="@drawable/button_bg"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.668"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="292dp"
+            android:layout_height="37dp"
+
+            android:background="#9CEAF4"
+            android:text="  Welcome to Food Order "
+            android:textAlignment="center"
+            android:textColor="#072CED"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtPhoneNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.812" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="411dp"
+        android:layout_height="198dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/app" />
+
+</android.support.constraint.ConstraintLayout>

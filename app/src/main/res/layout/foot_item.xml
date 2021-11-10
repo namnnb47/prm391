@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="@color/colorAccent"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/food_image"
+            android:layout_width="0dp"
+            android:layout_height="128dp"
+            android:layout_weight="4"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="126dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/food_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/food_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="126dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/food_price"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/capsule"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/addToCartImg"
+                android:layout_width="53dp"
+                android:layout_height="48dp"
+                android:background="@color/yellow"
+                android:backgroundTint="@color/yellow"
+                app:backgroundTintMode="add"
+                app:layout_anchorGravity="bottom|right|end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:pressedTranslationZ="6dp"
+                app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+                app:useCompatPadding="true" />
+
+6
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

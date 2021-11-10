@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#03A9F4"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#80CAEC">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtHoVaTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Họ Và Tên"
+                    android:enabled="false"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#73C7ED"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/txtSoDienThoai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Số Điện Thoại"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#6DC4EC">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtDiaChi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Địa Chỉ"
+                    android:inputType="textMultiLine" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/txtPayment"
+                    android:layout_width="222dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#4CAF50"
+                    android:text="Payment"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/imgMomo"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/momo"></ImageView>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/imgVnpay"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/vnpay"></ImageView>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/imgZalopay"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/zalopay"></ImageView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:id="@+id/hr"
+                    android:layout_width="105dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#878787" />
+
+                <TextView
+                    android:id="@+id/OR"
+                    android:layout_width="44dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:text="OR"
+                    android:textAlignment="center"
+                    android:textColor="@color/overlayActionBar"
+                    android:textSize="17dp" />
+
+                <TableRow
+                    android:id="@+id/dr"
+                    android:layout_width="105dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#878787" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/txtBack"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/DarkBlue"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="Back"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

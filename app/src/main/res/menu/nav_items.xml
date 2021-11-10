@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_breakfirst"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="@string/nav_breakfirst" />
+    <item
+        android:id="@+id/nav_lunch"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="@string/nav_lunch" />
+    <item
+        android:id="@+id/nav_dinner"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="@string/nav_dinner" />
+</menu>
